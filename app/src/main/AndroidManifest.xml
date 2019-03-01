@@ -23,6 +23,8 @@
                   android:label="FriendFullyActivity"/>
         <activity android:name=".ui.friends.FriendBarrierActivity"
                   android:label="FriendBarrierActivity"/>
+        <activity android:name=".ui.friends.FriendMinHeightActivity"
+                  android:label="FriendMinHeightActivity"/>
     </application>
 
 </manifest>

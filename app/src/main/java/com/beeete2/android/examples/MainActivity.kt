@@ -14,6 +14,7 @@ import com.beeete2.android.examples.databinding.ActivityMainBinding
 import com.beeete2.android.examples.databinding.MenuItemBinding
 import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
 import com.beeete2.android.examples.ui.friends.FriendFullyActivity
+import com.beeete2.android.examples.ui.friends.FriendMinHeightActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,7 +28,8 @@ class MainActivity : AppCompatActivity() {
             adapter = Adapter(listOf(
                 MenuItem("Friend", FriendSimplyActivity::class.java),
                 MenuItem("FriendFully", FriendFullyActivity::class.java),
-                MenuItem("FriendBarrierActivity", FriendBarrierActivity::class.java)
+                MenuItem("FriendBarrierActivity", FriendBarrierActivity::class.java),
+                MenuItem("FriendMinHeightActivity", FriendMinHeightActivity::class.java)
             ))
         }
     }

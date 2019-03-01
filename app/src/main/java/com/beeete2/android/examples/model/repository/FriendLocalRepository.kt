@@ -12,21 +12,24 @@ class FriendLocalRepository : FriendRepository {
                 "安倍",
                 "しんぞう",
                 "あべ",
-                Gender.MALE
+                Gender.MALE,
+                "1行目"
             ),
             Friend(
                 "佳彦",
                 "野田",
                 "よしひこ",
                 "のだ",
-                Gender.MALE
+                Gender.MALE,
+                "1行目\n2行目"
             ),
             Friend(
                 "直人",
                 "菅",
                 "なおと",
                 "かん",
-                Gender.MALE
+                Gender.MALE,
+                "1行目\n2行目\n3行目"
             ),
             Friend(
                 "由紀夫",

@@ -34,6 +34,8 @@
         <activity android:name=".ui.keypad.KeypadActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".ui.epoxy.EpoxyActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
-
 </manifest>

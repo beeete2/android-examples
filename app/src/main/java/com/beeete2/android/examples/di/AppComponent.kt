@@ -2,6 +2,7 @@ package com.beeete2.android.examples.di
 
 import android.app.Application
 import com.beeete2.android.examples.App
+import com.beeete2.android.examples.ui.epoxy.EpoxyActivity
 import com.beeete2.android.examples.ui.friends.FriendSimplyActivity
 import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
 import com.beeete2.android.examples.ui.friends.FriendFullyActivity
@@ -22,7 +23,8 @@ import javax.inject.Singleton
         FriendFullyActivity.FriendFullyActivityModule::class,
         FriendBarrierActivity.FriendBarrierActivityModule::class,
         FriendMinHeightActivity.FriendMinHeightActivityModule::class,
-        KeypadActivity.KeypadActivityModule::class
+        KeypadActivity.KeypadActivityModule::class,
+        EpoxyActivity.EpoxyActivityModule::class
     ]
 )
 interface AppComponent : AndroidInjector<App>  {

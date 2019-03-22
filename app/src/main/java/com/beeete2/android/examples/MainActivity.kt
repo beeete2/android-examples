@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.beeete2.android.examples.ui.friends.FriendSimplyActivity
 import com.beeete2.android.examples.databinding.ActivityMainBinding
 import com.beeete2.android.examples.databinding.MenuItemBinding
+import com.beeete2.android.examples.ui.epoxy.EpoxyActivity
 import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
 import com.beeete2.android.examples.ui.friends.FriendFullyActivity
 import com.beeete2.android.examples.ui.friends.FriendMinHeightActivity
@@ -31,7 +32,8 @@ class MainActivity : AppCompatActivity() {
                 MenuItem("FriendFully", FriendFullyActivity::class.java),
                 MenuItem("FriendBarrierActivity", FriendBarrierActivity::class.java),
                 MenuItem("FriendMinHeightActivity", FriendMinHeightActivity::class.java),
-                MenuItem("KeypadActivity", KeypadActivity::class.java)
+                MenuItem("KeypadActivity", KeypadActivity::class.java),
+                MenuItem("EpoxyActivity", EpoxyActivity::class.java)
             ))
         }
     }

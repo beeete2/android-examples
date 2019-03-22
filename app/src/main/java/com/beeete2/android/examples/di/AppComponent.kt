@@ -6,6 +6,7 @@ import com.beeete2.android.examples.ui.friends.FriendSimplyActivity
 import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
 import com.beeete2.android.examples.ui.friends.FriendFullyActivity
 import com.beeete2.android.examples.ui.friends.FriendMinHeightActivity
+import com.beeete2.android.examples.ui.keypad.KeypadActivity
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -20,7 +21,8 @@ import javax.inject.Singleton
         FriendSimplyActivity.FriendActivityModule::class,
         FriendFullyActivity.FriendFullyActivityModule::class,
         FriendBarrierActivity.FriendBarrierActivityModule::class,
-        FriendMinHeightActivity.FriendMinHeightActivityModule::class
+        FriendMinHeightActivity.FriendMinHeightActivityModule::class,
+        KeypadActivity.KeypadActivityModule::class
     ]
 )
 interface AppComponent : AndroidInjector<App>  {

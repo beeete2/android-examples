@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="com.beeete2.android.examples">
+
     <application
             android:name=".App"
             android:allowBackup="true"
@@ -14,17 +15,25 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.friends.FriendSimplyActivity"
+        <activity
+                android:name=".ui.friends.FriendSimplyActivity"
                 android:label="FriendsActivity"/>
-        <activity android:name=".ui.friends.FriendFullyActivity"
-                  android:label="FriendFullyActivity"/>
-        <activity android:name=".ui.friends.FriendBarrierActivity"
-                  android:label="FriendBarrierActivity"/>
-        <activity android:name=".ui.friends.FriendMinHeightActivity"
-                  android:label="FriendMinHeightActivity"/>
+        <activity
+                android:name=".ui.friends.FriendFullyActivity"
+                android:label="FriendFullyActivity"/>
+        <activity
+                android:name=".ui.friends.FriendBarrierActivity"
+                android:label="FriendBarrierActivity"/>
+        <activity
+                android:name=".ui.friends.FriendMinHeightActivity"
+                android:label="FriendMinHeightActivity"/>
+        <activity android:name=".ui.keypad.KeypadActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

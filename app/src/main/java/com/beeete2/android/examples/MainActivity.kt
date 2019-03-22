@@ -15,6 +15,7 @@ import com.beeete2.android.examples.databinding.MenuItemBinding
 import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
 import com.beeete2.android.examples.ui.friends.FriendFullyActivity
 import com.beeete2.android.examples.ui.friends.FriendMinHeightActivity
+import com.beeete2.android.examples.ui.keypad.KeypadActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +30,8 @@ class MainActivity : AppCompatActivity() {
                 MenuItem("Friend", FriendSimplyActivity::class.java),
                 MenuItem("FriendFully", FriendFullyActivity::class.java),
                 MenuItem("FriendBarrierActivity", FriendBarrierActivity::class.java),
-                MenuItem("FriendMinHeightActivity", FriendMinHeightActivity::class.java)
+                MenuItem("FriendMinHeightActivity", FriendMinHeightActivity::class.java),
+                MenuItem("KeypadActivity", KeypadActivity::class.java)
             ))
         }
     }

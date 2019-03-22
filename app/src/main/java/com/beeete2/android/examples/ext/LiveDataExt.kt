@@ -13,4 +13,7 @@ inline fun <T> LiveData<T>.observeNonNull(
     })
 }
 
-fun <T> MutableLiveData<T>.distinctUntilChanged(): LiveData<T> = Transformations.distinctUntilChanged(this)
+fun <T> LiveData<T>.distinctUntilChanged(): LiveData<T> = Transformations.distinctUntilChanged(this)
+
+inline fun <X, Y> LiveData<X>.map(crossinline transformer: (X) -> Y): LiveData<Y> =
+    Transformations.map(this) { transformer(it) }

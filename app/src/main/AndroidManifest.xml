@@ -31,11 +31,22 @@
         <activity
                 android:name=".ui.friends.FriendMinHeightActivity"
                 android:label="FriendMinHeightActivity"/>
-        <activity android:name=".ui.keypad.KeypadActivity"
+        <activity
+                android:name=".ui.keypad.KeypadActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.epoxy.EpoxyActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".ui.friends.ConstraintChainSpreadActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+                android:name=".ui.friends.ConstraintEllipsizeActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.epoxy.EpoxyActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
     </application>
 </manifest>

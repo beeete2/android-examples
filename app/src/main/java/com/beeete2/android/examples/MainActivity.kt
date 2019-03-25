@@ -9,13 +9,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import com.beeete2.android.examples.ui.friends.FriendSimplyActivity
 import com.beeete2.android.examples.databinding.ActivityMainBinding
 import com.beeete2.android.examples.databinding.MenuItemBinding
 import com.beeete2.android.examples.ui.epoxy.EpoxyActivity
-import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
-import com.beeete2.android.examples.ui.friends.FriendFullyActivity
-import com.beeete2.android.examples.ui.friends.FriendMinHeightActivity
+import com.beeete2.android.examples.ui.friends.*
 import com.beeete2.android.examples.ui.keypad.KeypadActivity
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +30,8 @@ class MainActivity : AppCompatActivity() {
                 MenuItem("FriendBarrierActivity", FriendBarrierActivity::class.java),
                 MenuItem("FriendMinHeightActivity", FriendMinHeightActivity::class.java),
                 MenuItem("KeypadActivity", KeypadActivity::class.java),
+                MenuItem("ConstraintChainSpreadActivity", ConstraintChainSpreadActivity::class.java),
+                MenuItem("ConstraintEllipsizeActivity", ConstraintEllipsizeActivity::class.java),
                 MenuItem("EpoxyActivity", EpoxyActivity::class.java)
             ))
         }

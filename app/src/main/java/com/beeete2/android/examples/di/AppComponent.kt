@@ -3,10 +3,7 @@ package com.beeete2.android.examples.di
 import android.app.Application
 import com.beeete2.android.examples.App
 import com.beeete2.android.examples.ui.epoxy.EpoxyActivity
-import com.beeete2.android.examples.ui.friends.FriendSimplyActivity
-import com.beeete2.android.examples.ui.friends.FriendBarrierActivity
-import com.beeete2.android.examples.ui.friends.FriendFullyActivity
-import com.beeete2.android.examples.ui.friends.FriendMinHeightActivity
+import com.beeete2.android.examples.ui.friends.*
 import com.beeete2.android.examples.ui.keypad.KeypadActivity
 import dagger.BindsInstance
 import dagger.Component
@@ -24,6 +21,8 @@ import javax.inject.Singleton
         FriendBarrierActivity.FriendBarrierActivityModule::class,
         FriendMinHeightActivity.FriendMinHeightActivityModule::class,
         KeypadActivity.KeypadActivityModule::class,
+        ConstraintChainSpreadActivity.ConstraintChainSpreadActivityModule::class,
+        ConstraintEllipsizeActivity.ConstraintEllipsizeActivityActivityModule::class,
         EpoxyActivity.EpoxyActivityModule::class
     ]
 )

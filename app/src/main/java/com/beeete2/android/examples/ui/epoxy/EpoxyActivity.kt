@@ -2,7 +2,9 @@ package com.beeete2.android.examples.ui.epoxy
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.beeete2.android.examples.R
+import androidx.recyclerview.widget.DividerItemDecoration
+import com.airbnb.epoxy.EpoxyController
+import com.beeete2.android.examples.*
 import com.beeete2.android.examples.databinding.ActivityEpoxyBinding
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -20,6 +22,8 @@ class EpoxyActivity : DaggerAppCompatActivity() {
 
     private lateinit var viewModel: EpoxyViewModel
 
+    private val controller = ListController()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -33,11 +37,55 @@ class EpoxyActivity : DaggerAppCompatActivity() {
             it.setDisplayHomeAsUpEnabled(true)
             it.setHomeButtonEnabled(true)
         }
+
+        binding.recyclerView.apply {
+            setHasFixedSize(true)
+            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+            adapter = controller.adapter
+        }
+
+        controller.requestModelBuild()
     }
 
     override fun onSupportNavigateUp(): Boolean {
         finish()
         return true
+    }
+
+    inner class ListController : EpoxyController() {
+
+        override fun buildModels() {
+            itemEpoxyHeader {
+                id("header_spread")
+                title("spread")
+            }
+            itemEpoxySpread {
+                id("spread_inside")
+            }
+            itemEpoxyHeader {
+                id("space1")
+            }
+
+            itemEpoxyHeader {
+                id("header_spread_inside")
+                title("spread_inside")
+            }
+            itemEpoxySpreadInside {
+                id("spread_inside")
+            }
+            itemEpoxyHeader {
+                id("space2")
+            }
+
+            itemEpoxyHeader {
+                id("header_packed")
+                title("packed")
+            }
+            itemEpoxyPacked {
+                id("packed")
+            }
+        }
+
     }
 
     @Module

@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.beeete2.android.examples.databinding.ActivityMainBinding
 import com.beeete2.android.examples.databinding.MenuItemBinding
 import com.beeete2.android.examples.ui.epoxy.EpoxyActivity
+import com.beeete2.android.examples.ui.epoxy.EpoxyInputActivity
+import com.beeete2.android.examples.ui.epoxy.EpoxyListActivity
 import com.beeete2.android.examples.ui.friends.*
 import com.beeete2.android.examples.ui.keypad.KeypadActivity
 
@@ -32,7 +34,9 @@ class MainActivity : AppCompatActivity() {
                 MenuItem("KeypadActivity", KeypadActivity::class.java),
                 MenuItem("ConstraintChainSpreadActivity", ConstraintChainSpreadActivity::class.java),
                 MenuItem("ConstraintEllipsizeActivity", ConstraintEllipsizeActivity::class.java),
-                MenuItem("EpoxyActivity", EpoxyActivity::class.java)
+                MenuItem("EpoxyActivity", EpoxyActivity::class.java),
+                MenuItem("EpoxyListActivity", EpoxyListActivity::class.java),
+                MenuItem("EpoxyInputActivity", EpoxyInputActivity::class.java)
             ))
         }
     }

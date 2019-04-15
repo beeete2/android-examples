@@ -65,7 +65,7 @@ dependencies {
 
     implementation 'me.tatarka.injectedvmprovider:injectedvmprovider-ktx:1.0'
 
-    def epoxy_version = "3.3.1"
+    def epoxy_version = "3.4.1"
     implementation "com.airbnb.android:epoxy:$epoxy_version"
     kapt "com.airbnb.android:epoxy-processor:$epoxy_version"
     implementation "com.airbnb.android:epoxy-databinding:$epoxy_version"

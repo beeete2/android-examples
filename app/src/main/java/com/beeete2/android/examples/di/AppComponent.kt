@@ -3,6 +3,8 @@ package com.beeete2.android.examples.di
 import android.app.Application
 import com.beeete2.android.examples.App
 import com.beeete2.android.examples.ui.epoxy.EpoxyActivity
+import com.beeete2.android.examples.ui.epoxy.EpoxyInputActivity
+import com.beeete2.android.examples.ui.epoxy.EpoxyListActivity
 import com.beeete2.android.examples.ui.friends.*
 import com.beeete2.android.examples.ui.keypad.KeypadActivity
 import dagger.BindsInstance
@@ -23,14 +25,17 @@ import javax.inject.Singleton
         KeypadActivity.KeypadActivityModule::class,
         ConstraintChainSpreadActivity.ConstraintChainSpreadActivityModule::class,
         ConstraintEllipsizeActivity.ConstraintEllipsizeActivityActivityModule::class,
-        EpoxyActivity.EpoxyActivityModule::class
+        EpoxyActivity.EpoxyActivityModule::class,
+        EpoxyListActivity.EpoxyListActivityModule::class,
+        EpoxyInputActivity.EpoxyInputActivityModule::class
     ]
 )
-interface AppComponent : AndroidInjector<App>  {
+interface AppComponent : AndroidInjector<App> {
     @Component.Builder
     interface Builder {
         @BindsInstance
         fun application(application: Application): Builder
+
         fun build(): AppComponent
     }
 

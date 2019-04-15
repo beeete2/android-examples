@@ -47,6 +47,14 @@
                 android:name=".ui.epoxy.EpoxyActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".ui.epoxy.EpoxyListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.epoxy.EpoxyInputActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
     </application>
 </manifest>
